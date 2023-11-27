@@ -1,0 +1,406 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.btn{
+    padding: 11px 16px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.pull-right{
+    float: right !important;
+}
+.text-while{
+    color: #fff !important;
+}
+.clear{
+    clear: both;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left:8px ;
+    padding-right:8px ;
+}
+.col-third{
+    width: 33.33333%;
+}
+.clo-full{
+    width: 100%;
+}
+.clo-half{
+    width: 50%;
+}
+.text-center{
+    text-align: center !important;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+#nav{
+    display: inline-block;
+}
+#main,.subnav{
+    list-style-type: none;
+}
+
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+#nav{
+
+}
+
+#nav > li{
+    display: inline-block;
+}
+#nav  li{
+    
+    position: relative;
+}
+#nav >li> a{
+    color:aliceblue;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: inline-block;
+    
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li:hover >a,
+#nav .subnav li:hover {
+    color:#000;
+    background-color: #ccc ;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0px;
+    min-width: 160px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+#nav .subnav a{
+    color:#000;
+    padding: 0px 12px;
+    line-height: 38px;
+}
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#header .seach-btn{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+#header .seach-btn:hover{
+    background-color: red;
+
+}
+#header .search-icon{
+    color: #ccc;
+    font-size: 20px;
+    line-height: 46px;
+}
+#slider{
+ margin-top: 46px;
+ padding-top: 50%;
+ background:url(/assets/img/anh-chill-buon-yodyvn1.webp) top center / cover no-repeat;
+ position: relative;
+
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+
+}
+#slider .text-heding{
+    font-weight: 500;
+    font-size: 24;
+}
+#slider .text-description{
+    font-size: 15;
+    margin: 25px;
+
+}
+
+#content{
+   
+}
+#content .content-section{
+    width: 800px;
+    padding: 64px 0px 112px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px; 
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0,6;
+}
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-list{
+    margin-top: 48px;
+
+}
+
+#content .menber-name{
+    font-size: 15px;
+    text-align: center;
+    
+}
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 5px;
+    
+}
+#content .tour-section{
+    background-color: #000;
+}
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+.tickets-list li{
+    padding: 11px 16px;
+    font-size: 15px;
+    border-bottom:1px solid #ccc ;
+    color:#757575;
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color:#fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+.place-list{
+    margin-top:32px;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+}
+
+
+.place-img{
+ width: 100%;
+ display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-hading{
+    font-size: 15px;
+    
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal .modal-container{
+    width: 900px;
+    min-height: 200px;
+    background: #fff;
+    position: relative;
+}
+.modal .modal-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+.modal .moal-heading-icon{
+    margin-right: 16px;
+
+}
+.modal .modal-close{
+    right: 0px;
+    top:0px;
+    position: absolute;
+    padding: 13px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal .modal-close:hover{
+    background-color: #f44336;
+    opacity: 1;
+}
+.modal .modal-body{
+    padding: 16px;
+
+}
+.modal .modal-laber{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal .modal-input{
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom:24px ;
+}
+.modal #buy-tickets{
+    width: calc(100%-32px);
+    background-color: #009688;
+    border: none;
+    padding: 18px;
+}
+.modal #buy-tickets:hover{
+    opacity: 0.8;
+}
+.modal .modal-footer{
+    padding: 16px;
+    float: right;
+}
+.modal .modal-help a{
+    color: #2196f3;
+}
+.modal.open{
+    display: flex;
+}
+.cotact-content{
+    margin-top: 48px;
+}
+.cotact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.cotact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.cotact-form{
+    font-size: 15px;
+    float: right;
+
+}
+.cotact-form .from-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.map-section img{
+    width: 100%;
+}
+
+#footer{
+ padding: 64px 16px;
+ text-align: center;
+}
+#footer .socials-list{
+    font-size: 24px;
+}
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+#footer .copyright{
+    margin-top: 15px;
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
