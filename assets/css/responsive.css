@@ -1,0 +1,15 @@
+@media screen and ( max-widht: 740px ) {
+    #nav > li{
+        display:block ;
+    }
+    #header .seach-btn{
+        display: none;
+    }
+}
+
+/* @media( min-width:1024px ){
+    
+}
+@media( min-width:740px) and ( max-width:1024px){
+    
+} */
