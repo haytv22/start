@@ -31,7 +31,7 @@
             <div class="seach-btn">
                 <i class="search-icon ti-search"></i>
             </div>
-            <div class="mobile-menu-btn">
+            <div id="mobile-menu" class="mobile-menu-btn">
                 <i class="menu-icon ti-menu"></i>
             </div>
         </div>
@@ -209,10 +209,27 @@
          </p>   
 
         </div>
-        <div class="open"></div>
         <script>
             var header = document.getElementById('header');
-            
+            var mobileMenu = document.getElementById('mobile-menu');
+            var headerHeight = header.clientHeight;
+            // đóng mở mobile menu //
+            mobileMenu.onclick=function(){
+                var isClose = header.clientHeight === headerHeight;
+                if (isClose){
+                    header.style.height = 'auto';
+                }else {
+                    header.style.height = null;
+                }
+            }
+            // tự động đóng khi chọn menu //
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+            for (var i = 0 ; i < menuItems.length; i++){
+                var menuItem = menuItems[i];
+                menuItem.onclick = function(){
+                    header.style.height = null;
+                }
+            }
         </script>
 </body>
 </html>

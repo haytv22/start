@@ -13,6 +13,9 @@
     #nav > li {
       display: block;
     }
+    #header{
+       overflow: hidden;
+    }
   
     #header .seach-btn {
       display: none;
