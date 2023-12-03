@@ -166,7 +166,11 @@ html{
 #slider{
  margin-top: 46px;
  padding-top: 50%;
+<<<<<<< HEAD
  background:url(../img/anh-chill-buon-yodyvn1.jpg) top center / cover no-repeat;
+=======
+ background:url(./assets/img/wp5515046-chill-desktop-wallpapers.jpg) top center / cover no-repeat;
+>>>>>>> c391aaa8c8a6ce8460715d50bc3f847be42cdc59
  position: relative;
 
 }
