@@ -50,15 +50,15 @@
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 
                 <div class="row member-list">
-                    <div class="col col-third text-center member-items">
+                    <div class=" col col-third text-center s-col-full mt-16 member-items">
                         <p class="menber-name"> văn vui vẻ</p>
                         <img class="member-img" src="assets/img/logio.jpg" alt="" >
                     </div>
-                    <div class="col col-third text-center member-items">
+                    <div class=" col col-third text-center s-col-full mt-16 member-items">
                         <p class="menber-name"> văn vui vẻ</p>
                         <img class="member-img" src="assets/img/logio.jpg" alt="" >
                     </div>
-                    <div class="col col-third text-center member-items">
+                    <div class=" col col-third text-center s-col-full mt-16 member-items">
                         <p class="menber-name"> văn vui vẻ</p>
                         <img class="member-img" src="assets/img/logio.jpg" alt="" >
                     </div>
@@ -75,7 +75,7 @@
                         <li>november <span class="quantity">3</span></li>
                     </ul>
                     <div class="row place-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img class="place-img" src="assets/img/AI Art trên TikTok (1).jpg" alt="văn vui vẻ" >
                             <div class="place-body">
                                 <h3 class="place-hading">văn vui vẻ</h3>
@@ -84,7 +84,7 @@
                                 <button href="#" class="btn s-full-width js-buy-tickest">Buy tickest</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img class="place-img" src="assets/img/AI Art trên TikTok.jpg" alt="văn vui vẻ" >
                             <div class="place-body">
                                 <h3 class="place-hading">văn vui vẻ</h3>
@@ -93,7 +93,7 @@
                                 <button href="#" class="btn s-full-width js-buy-tickest">Buy tickest</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img class="place-img" src="assets/img/tải xuống.jpg" alt="văn vui vẻ" >
                             <div class="place-body">
                                 <h3 class="place-hading">văn vui vẻ</h3>
@@ -226,8 +226,14 @@
             var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
             for (var i = 0 ; i < menuItems.length; i++){
                 var menuItem = menuItems[i];
+                console.log(menuItem.nextElementSibling);
                 menuItem.onclick = function(){
-                    header.style.height = null;
+                    var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+                    if (isParentMenu){
+                        event.preventDefault();
+                    }else{
+                        header.style.height = null;
+                    }
                 }
             }
         </script>
