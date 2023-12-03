@@ -1,5 +1,19 @@
-@media( min-width:1024px ){
-   
+@media( max-width:1024px ){
+   .btn {
+    padding: 15px 16px;
+   }
+   .cotact-form .from-control{
+    padding: 15px;
+   }
+   #footer .socials-list a{
+    margin: 0 8px;
+   }
+   #footer .copyright{
+    display: inline-block;
+   }
+   #footer .copyright a{
+    padding: 15px 0;
+   }
 }
 /* @media( min-width:740px) and ( max-width:1024px){
     #nav > li{
@@ -10,8 +24,11 @@
     }
 } */
 @media (max-width: 740px) {
+  .s-col-width{
+    width: 100% !important;
+ }
   .s-col-full{
-    width: 100%;   
+    width: 100% !important;   
   }
     #nav{
       display: block;
@@ -47,6 +64,11 @@
     #content .member-img{
       width: 60%;
     }
-    
+    .cotact-form{
+      margin-top: 16px;
+    }
+    .s-mt-8{
+      margin-top: 8px;
+    }
   }
   
