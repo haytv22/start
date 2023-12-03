@@ -67,6 +67,7 @@ html{
 .mt-32{
     margin-top: 16px !important;
 }
+
 #nav{
     display: inline-block;
 }
@@ -273,6 +274,7 @@ html{
 .place-img{
  width: 100%;
  display: block;
+ border-radius: 16px 16px 0 0;
 }
 .place-img:hover{
     opacity: 0.6;
@@ -282,6 +284,7 @@ html{
     background-color: #fff;
     padding: 16px;
     font-size: 15px;
+    border-radius: 0 0 16px 16px;
 }
 
 .place-hading{
