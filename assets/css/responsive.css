@@ -24,6 +24,9 @@
     }
 } */
 @media (max-width: 46.1875em) {
+   .mt-8{
+    margin-top: 8px !important;
+}
   .s-col-width{
     width: 100% !important;
  }
