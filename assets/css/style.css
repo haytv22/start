@@ -316,6 +316,16 @@ html{
     justify-content: center;
 }
 
+.modal-flow{
+    position: absolute;
+    background-color:#757575;
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    z-index: -1;
+}
 
 .modal .modal-container{
     width: 900px;
@@ -380,8 +390,8 @@ html{
 .modal .modal-help a{
     color: #2196f3;
 }
-.modal.open{
-    display: flex;
+.open{
+    display: flex !important;
 }
 .cotact-content{
     margin-top: 48px;
